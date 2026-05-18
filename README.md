@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository documents a public-safe, anonymized sample workflow for OCR-assisted invoice intake and SAP posting preparation in Accounts Payable.
+This repository documents a public-safe, anonymized workflow design sample for Accounts Payable invoice intake and SAP posting preparation.OCR extraction is treated as an optional upstream input layer and is not implemented in this repository.
 
 The workflow separates invoices into three paths before SAP output preparation:
 
@@ -15,7 +15,7 @@ The sample focuses on workflow design, controls, exception handling, and SAP pos
 ## Target Process Summary
 
 Invoice PDF Intake
--> OCR Extraction
+-> Optional OCR or Manual Data Capture
 -> Invoice Type Classification
 -> Route to Non-PO, PO, or AP Triage
 -> AP Review
